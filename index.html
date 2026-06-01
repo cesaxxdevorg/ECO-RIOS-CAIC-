@@ -1,199 +1,149 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ECO RIOS CAICÓ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoRios Caicó</title>
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, sans-serif;
-    }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    body{
-      background:#f4f7f5;
-      color:#222;
-      line-height:1.6;
-    }
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f9f4;
+}
 
-    header{
-      background:linear-gradient(135deg,#0d7a3a,#1fa15b);
-      color:white;
-      padding:50px 20px;
-      text-align:center;
-    }
+header{
+    background:linear-gradient(90deg,#0d6efd,#198754);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
 
-    header h1{
-      font-size:3rem;
-      margin-bottom:10px;
-    }
+header h1{
+    font-size:48px;
+}
 
-    header p{
-      font-size:1.2rem;
-    }
+header p{
+    font-size:22px;
+    margin-top:10px;
+}
 
-    .container{
-      max-width:1100px;
-      margin:auto;
-      padding:40px 20px;
-    }
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:30px 0;
+}
 
-    .section-title{
-      text-align:center;
-      margin-bottom:40px;
-    }
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    margin-bottom:25px;
+}
 
-    .section-title h2{
-      font-size:2.2rem;
-      color:#0d7a3a;
-    }
+h2{
+    color:#198754;
+    margin-bottom:15px;
+}
 
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:25px;
-    }
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
 
-    .card{
-      background:white;
-      border-radius:18px;
-      padding:25px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.1);
-      transition:0.3s;
-    }
+button{
+    background:#198754;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
 
-    .card:hover{
-      transform:translateY(-5px);
-    }
+button:hover{
+    background:#146c43;
+}
 
-    .card h3{
-      color:#0d7a3a;
-      margin-bottom:15px;
-    }
+ul{
+    padding-left:20px;
+}
 
-    .impact{
-      margin-top:60px;
-      background:white;
-      padding:35px;
-      border-radius:20px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.08);
-    }
+li{
+    margin-bottom:10px;
+}
 
-    .impact ul{
-      margin-top:20px;
-      padding-left:20px;
-    }
+footer{
+    background:#198754;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
 
-    .impact li{
-      margin-bottom:10px;
-    }
-
-    footer{
-      margin-top:50px;
-      background:#0d7a3a;
-      color:white;
-      text-align:center;
-      padding:20px;
-    }
-
-    .btn{
-      display:inline-block;
-      margin-top:20px;
-      padding:12px 24px;
-      background:white;
-      color:#0d7a3a;
-      text-decoration:none;
-      border-radius:10px;
-      font-weight:bold;
-      transition:0.3s;
-    }
-
-    .btn:hover{
-      background:#dff5e8;
-    }
-  </style>
 </head>
-
 <body>
 
-  <header>
-    <h1>ECO RIOS CAICÓ</h1>
-    <p>Transformando rios em esperança.</p>
+<header>
+<h1>🌊 EcoRios Caicó</h1>
+<p>Transformando rios em esperança</p>
+</header>
 
-    <a href="#" class="btn">Participar do Projeto</a>
-  </header>
+<div class="container">
 
-  <section class="container">
+<div class="card">
+<h2>📸 Denunciar Local com Lixo</h2>
 
-    <div class="section-title">
-      <h2>Plataforma Digital</h2>
-      <p>
-        Uma plataforma criada para ajudar na preservação dos rios
-        Recreio e Barra Nova.
-      </p>
-    </div>
+<form action="https://formsubmit.co/gabrieldossantossoaresalves28@gmail.com" method="POST">
 
-    <div class="cards">
+<input type="hidden" name="_subject" value="Nova denúncia - EcoRios Caicó">
 
-      <div class="card">
-        <h3>📍 Denúncias</h3>
-        <p>
-          Permite denunciar locais com lixo irregular e descarte inadequado.
-        </p>
-      </div>
+<label>Nome</label>
+<input type="text" name="nome" required>
 
-      <div class="card">
-        <h3>📸 Fotos dos Rios</h3>
-        <p>
-          Registro de imagens antes e depois das ações ambientais.
-        </p>
-      </div>
+<label>Local da denúncia</label>
+<input type="text" name="local" required>
 
-      <div class="card">
-        <h3>🗺️ Áreas Críticas</h3>
-        <p>
-          Mapeamento das regiões mais afetadas pela poluição.
-        </p>
-      </div>
+<label>Descrição do problema</label>
+<textarea name="descricao" rows="5" required></textarea>
 
-      <div class="card">
-        <h3>🤝 Voluntários</h3>
-        <p>
-          Organização de equipes para mutirões de limpeza e preservação.
-        </p>
-      </div>
+<button type="submit">Enviar Denúncia</button>
 
-      <div class="card">
-        <h3>🌱 Ações Ambientais</h3>
-        <p>
-          Divulgação de campanhas ecológicas e conscientização ambiental.
-        </p>
-      </div>
+</form>
+</div>
 
-    </div>
+<div class="card">
+<h2>📢 Campanhas Ambientais</h2>
 
-    <div class="impact">
-      <h2>Impacto Esperado</h2>
+<ul>
+<li>🌱 Mutirão de Limpeza dos Rios</li>
+<li>♻️ Campanha de Coleta Seletiva</li>
+<li>🌊 Preservação do Rio Barra Nova</li>
+<li>💧 Preservação do Rio Recreio</li>
+<li>🌳 Educação Ambiental nas Escolas</li>
+<li>🤝 Mobilização de Voluntários</li>
+</ul>
 
-      <ul>
-        <li>✔️ Maior participação da população</li>
-        <li>✔️ Redução do lixo nos rios</li>
-        <li>✔️ Educação ambiental para jovens</li>
-        <li>✔️ Fortalecimento da sustentabilidade</li>
-        <li>✔️ Uso da tecnologia em benefício da natureza</li>
-      </ul>
-    </div>
+</div>
 
-  </section>
+</div>
 
-  <footer>
-    <p>
-      ECO RIOS CAICÓ © 2026 - Preservando hoje para o amanhã.
-    </p>
-  </footer>
+<footer>
+<h3>EcoRios Caicó</h3>
+<p>Transformando rios em esperança</p>
+<p>📧 gabrieldossantossoaresalves28@gmail.com</p>
+</footer>
 
 </body>
 </html>
